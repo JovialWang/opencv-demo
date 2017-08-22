@@ -41,7 +41,7 @@ class CaptrueManager(object):
     def frame(self):
         if self._enteredFrame and self._frame is None:
             _, self._frame = self._capture.retrieve()
-            return self._frame
+        return self._frame
         
     @property
     def isWritingImage(self):
